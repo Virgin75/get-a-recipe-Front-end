@@ -1,24 +1,24 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import useFetch from './useFetch';
+
 
 function App() {
+  const res = useFetch("https://get-a-recipe-api.herokuapp.com/api/recipes?1=banana&2=cream&3=chocolate&4=vanilla", {});
+  
+  if (!res.response) {
+    return <div>Loading...</div>
+  }
+
+  const title = res.response.recipes[0].title;
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to yoopi reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h3>{title}</h3>
+      </div>
     </div>
   );
 }
