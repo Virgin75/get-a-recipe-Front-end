@@ -1,11 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Home from './routes/Home';
+import {BrowserRouter as Router, Route } from 'react-router-dom'
+import Recipe from './routes/Recipe'
+import StoreProvider from './store'
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <StoreProvider>
+  <Router>
+    <>
+      <Route path='/recipe' component={Recipe} />
+      <Route path='/' component={Home} />
+    </>
+  </Router>
+  </StoreProvider>,
   document.getElementById('root')
 );
 
