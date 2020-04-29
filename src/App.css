@@ -5,4 +5,108 @@ img {
 body {
   margin: 0px;
   font-family: 'Roboto Mono', monospace;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+h1 {
+  font-size: 2.3rem;
+  line-height: 3.4rem;
+  max-width: 80%
+}
+
+h2 {
+  padding-bottom: 25px;
+}
+
+p {
+  font-size: 1.1rem;
+  max-width: 80%;
+  line-height: 2em;
+}
+
+input {
+  padding: 17px;
+  border-radius: 9px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border: none;
+  -webkit-box-shadow: 10px 10px 28px -8px rgba(0,0,0,0.3);
+  -moz-box-shadow: 10px 10px 28px -8px rgba(0,0,0,0.3);
+  box-shadow: 10px 10px 28px -8px rgba(0,0,0,0.3);
+  max-height: 20px;
+}
+
+.sendButton {
+  background-color: rgba(101, 141, 61, 0.63);
+  color: white;
+  border: none;
+  padding: 17px;
+  -webkit-box-shadow: 10px 10px 28px -8px rgba(255, 255, 255, 0.48);
+  -moz-box-shadow: 10px 10px 28px -8px rgba(255, 255, 255, 0.48);
+  box-shadow: 10px 10px 28px -8px rgba(255, 255, 255, 0.48);
+  margin-bottom: 25px;
+  border-radius: 9px;
+
+}
+
+.plus {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 900;
+  text-shadow: 10px 10px 28px -8px rgba(0,0,0,0.3);
+  padding-left: 20px;
+  padding-right: 80px;
+  margin-bottom: 25px;
+}
+
+.topColorBar {
+  background-color: #B0D2DE;
+  height: 9px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap; 
+  margin-top: 70px; 
+  margin-bottom: 70px; 
+  margin-left: 2em; 
+  margin-right: 2em;
+}
+
+.titleDiv {
+  width: 100%;
+}
+
+.ingredientsContainer {
+  display: flex;
+  flex-wrap: wrap; 
+  margin-top: 70px; 
+  margin-bottom: 70px; 
+  margin-left: 2em; 
+  margin-right: 2em;
+  background: radial-gradient(122.12% 2412.21% at 129.1% 155.25%, #658D3D 0%, rgba(255, 255, 255, 0) 100%), #B0D2DE;
+  border-radius: 10px;
+  padding: 2em;
+}
+
+.inputList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center; 
+  flex: 1.3;
+}
+
+.headerHeadings {
+  flex: 2;
+  display: flex;
+  align-items: flex-start; 
+  flex-direction: column; 
+  justify-content: center;
 }
