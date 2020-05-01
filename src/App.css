@@ -15,7 +15,7 @@ h1 {
   max-width: 80%
 }
 
-h2 {
+h2, h3 {
   padding-bottom: 25px;
 }
 
@@ -37,6 +37,12 @@ input {
   max-height: 20px;
 }
 
+li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
 .sendButton {
   background-color: rgba(101, 141, 61, 0.63);
   color: white;
@@ -47,7 +53,10 @@ input {
   box-shadow: 10px 10px 28px -8px rgba(255, 255, 255, 0.48);
   margin-bottom: 25px;
   border-radius: 9px;
+}
 
+.sendButton:hover {
+  background-color: rgba(44, 82, 18, 0.63);
 }
 
 .plus {
@@ -62,7 +71,7 @@ input {
 
 .topColorBar {
   background-color: #B0D2DE;
-  height: 9px;
+  height: 5px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
@@ -80,6 +89,15 @@ input {
   width: 100%;
 }
 
+.loading {
+  color: rgba(101, 141, 61, 0.63);
+  font-size: 1.1rem;
+}
+
+.results {
+  color: rgb(132, 156, 165);
+}
+
 .ingredientsContainer {
   display: flex;
   flex-wrap: wrap; 
@@ -90,6 +108,34 @@ input {
   background: radial-gradient(122.12% 2412.21% at 129.1% 155.25%, #658D3D 0%, rgba(255, 255, 255, 0) 100%), #B0D2DE;
   border-radius: 10px;
   padding: 2em;
+}
+
+.recipesContainer {
+  margin-top: 70px; 
+  margin-bottom: 70px; 
+  margin-left: 2em; 
+  margin-right: 2em;
+}
+
+.recipeContainer {
+  margin-top: 70px; 
+  margin-bottom: 70px; 
+  margin-left: 2em; 
+  margin-right: 2em;
+}
+
+.grey {
+  background-color: #fafafa;
+  border-radius: 11px;
+  padding: 35px;
+  margin-top: 35px;
+  -webkit-box-shadow: 3px 3px 33px -8px rgba(107, 102, 102, 0.30);
+  -moz-box-shadow: 3px 3px 33px -8px rgba(107, 102, 102, 0.30);
+  box-shadow: 3px 3px 33px -8px rgba(107, 102, 102, 0.30);
+}
+
+.instructions {
+  max-width: 100% !important;
 }
 
 .inputList {
