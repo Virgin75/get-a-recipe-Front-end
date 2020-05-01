@@ -6,6 +6,8 @@ export default ({ children }) => {
 
   const [text, setText] = React.useState("")
   const [formCount, setFormCount] = React.useState(3)
+  const [response, setResponse] = React.useState({})
+  const [isLoading, setIsLoading] = React.useState(false)
 
 
   const [ingredient1, setIngredient1] = React.useState("")
@@ -22,7 +24,7 @@ export default ({ children }) => {
   const store = {
     text, setText, formCount, ingredient1, ingredient2, ingredient3, ingredient4, ingredient5, ingredient6, ingredient7, ingredient8, 
     setIngredient1, setIngredient2, setIngredient3, setIngredient4, setIngredient5, setIngredient6, setIngredient7, setIngredient8, 
-    setFormCount,
+    setFormCount, response, setResponse, isLoading, setIsLoading
   }
 
   return <StoreContext.Provider value={store}>{children}</StoreContext.Provider>
