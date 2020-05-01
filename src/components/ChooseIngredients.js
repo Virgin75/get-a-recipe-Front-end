@@ -49,7 +49,7 @@ function ChooseIngredients() {
     
 
     for (let i = 1; i <= formCount; i++) {
-      fetchURL = fetchURL + i + "=" + ingredients[i-1] + "&"
+      fetchURL = fetchURL + i + "=" + ingredients[i-1].toLowerCase() + "&"
     }
 
     const res = async () => {
