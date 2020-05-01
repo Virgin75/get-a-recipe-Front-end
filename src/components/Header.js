@@ -19,7 +19,7 @@ function Header() {
     <div className="header">
 
       <div className="imgContainer">
-        <img src={leftImg} width="425px" height="auto" />
+        <img src={leftImg} width="375px" height="auto" />
       </div>
 
       <div className="headerHeadings">
